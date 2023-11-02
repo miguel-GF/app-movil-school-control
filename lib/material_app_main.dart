@@ -3,8 +3,8 @@ import 'package:get/get.dart';
 
 import 'app_config.dart';
 import 'constants.dart';
-import 'screens/onboarding_screen.dart';
-// import 'screens/test_screen.dart';
+import 'routes/routes.dart';
+import 'routes/routes_name.dart';
 import 'themes/ipes_theme_pro.dart';
 import 'themes/theme_dev.dart';
 
@@ -31,7 +31,10 @@ class MaterialAppMain extends StatelessWidget {
     return GetMaterialApp(
       theme: getLightTheme(),
       darkTheme: getDarkTheme(),
-      home: const OnboardingScreen(),
+      defaultTransition: Transition.leftToRightWithFade,
+      transitionDuration: const Duration(milliseconds: 500),
+      initialRoute: nameOnboardingScreen,
+      getPages: GetPages().getPages,
     );
   }
 }
