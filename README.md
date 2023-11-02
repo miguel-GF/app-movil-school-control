@@ -10,3 +10,8 @@ Para instalar las dependencias correr comando:
 ```
 flutter pub get
 ```
+
+En tu archivo local.properties si faltan las siguientes lineas, se las agregas
+*flutter.minSdkVersion=21*
+*flutter.targetSdkVersion=33*
+*flutter.compileSdkVersion=33*
