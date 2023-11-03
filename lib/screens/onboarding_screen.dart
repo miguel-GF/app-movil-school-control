@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_onboarding_slider/flutter_onboarding_slider.dart';
 import 'package:get/get.dart';
 
-import '../helpers/asset_helper.dart';
+import '../helpers/assets_helper.dart';
 import '../routes/routes_name.dart';
 import '../widgets/onboarding/onboarding_image_widget.dart';
 import '../widgets/onboarding/onboarding_text_widget.dart';
@@ -28,9 +28,9 @@ class OnboardingScreen extends StatelessWidget {
           skipTextButton: const Text('Skip'),
           trailing: const Text('Iniciar sesión'),
           background: <Widget>[
-            OnboardingImageWidget(assetUrl: AssetHelper.defaultOnboarding),
-            OnboardingImageWidget(assetUrl: AssetHelper.defaultOnboarding),
-            OnboardingImageWidget(assetUrl: AssetHelper.defaultOnboarding),
+            OnboardingImageWidget(assetUrl: AssetsHelper.defaultOnboarding),
+            OnboardingImageWidget(assetUrl: AssetsHelper.defaultOnboarding),
+            OnboardingImageWidget(assetUrl: AssetsHelper.defaultOnboarding),
           ],
           totalPage: 3,
           speed: 0.8,
