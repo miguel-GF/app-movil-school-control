@@ -1,11 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import 'app_config.dart';
+import 'config/environment.dart';
 import 'material_app_main.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   final AppConfig appConfig = AppConfig(appName: 'IPES', flavor: 'ipes_pro');
+  await Environment().loadEnvironment(flavor: 'ipes_pro');
+  await SystemChrome.setPreferredOrientations(<DeviceOrientation>[
+    DeviceOrientation.portraitUp,
+    DeviceOrientation.portraitDown
+  ]);
   runApp(MyApp(
     appConfig: appConfig,
   ));

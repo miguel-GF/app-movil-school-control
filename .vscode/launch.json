@@ -13,7 +13,7 @@
       "args": ["--flavor", "ipes_dev"]
     },
     {
-      "name": "IPES",
+      "name": "IPES PRO",
       "request": "launch",
       "type": "dart",
       "flutterMode": "profile",
