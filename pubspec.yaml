@@ -39,7 +39,7 @@ dependencies:
   flutter_onboarding_slider: ^1.0.10
   get: ^4.6.5
   json_annotation: ^4.8.0
-  flutter_login: ^4.1.1
+  animated_toggle_switch: ^0.8.0
 
 dev_dependencies:
   flutter_test:
@@ -60,13 +60,10 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
+    - lib/config/
     - assets/images/
-
-  # An image asset can refer to one or more resolution-specific "variants", see
-  # https://flutter.dev/assets-and-images/#resolution-aware
-
-  # For details regarding adding assets from package dependencies, see
-  # https://flutter.dev/assets-and-images/#from-packages
+    - assets/dev/
+    - assets/ipes/
 
   # To add custom fonts to your application, add a fonts section here,
   # in this "flutter" section. Each entry in this list should have a
